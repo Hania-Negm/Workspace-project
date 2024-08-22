@@ -1,0 +1,141 @@
+@import url('../css/stylesheet.css');
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Start Header*/
+.main-header{
+    background-color: #334756;
+}
+
+.main-header .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 120px;
+    align-items: center;
+}
+
+.header-ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;
+}
+
+.header-li a{
+    text-decoration: none;
+    color: #D6D6D6;
+    font-family: "Ramabhadra" , "sans-serif";
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.header-li a:hover{
+    color: #FFF;
+}
+
+.menu{
+    width: 48px;
+    height: 48px;
+    display: none;
+    border: 0;
+    background: transparent;
+}
+/*End Header*/
+
+/*Start Hero Section*/
+.hero-section{
+    padding: 69px 0;
+}
+
+.hero-section .row{
+    justify-content: space-around;
+    gap: 24px;
+    flex-wrap: nowrap;
+}
+
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.hero-heading h1{
+    color: #334756;
+    font-family: "Ramabhadra" , "sans-serif";
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.color{
+    color: #FF4C29;
+}
+
+.hero-heading p{
+    color: #667580;
+    font-family: "Ramabhadra" , "sans-serif";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hero-links{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.first-link{
+    height: 56px;
+    line-height: 18px;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 284px;
+    padding: 16px 24px;
+    text-align: center;
+    color: #FFF;
+    font-family: "Ramabhadra" , "sans-serif";
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid #FF4C29;
+    background-color: #FF4C29;
+}
+
+.first-link:hover{
+    transition: all linear 0.2s;
+    transform: scale(1);
+    background-color: #FFF;
+    color: #FF4C29;
+}
+
+.second-link{
+    height: 56px;
+    line-height: 18px;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 284px;
+    padding: 16px 24px;
+    text-align: center;
+    color: #334756;
+    font-family: "Ramabhadra" , "sans-serif";
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid #667580;
+}
+
+.second-link:hover{
+    transition: all linear 0.2s;
+    transform: scale(1);
+    background-color: #667580;
+    color: #FFF;
+}
+
+.hero-img{
+    max-width: 100%;
+}
