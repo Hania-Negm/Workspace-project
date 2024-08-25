@@ -46,7 +46,6 @@
     background: transparent;
 }
 
-/*Responsive*/
 /*End Header*/
 
 /*Start Hero Section*/
@@ -88,7 +87,6 @@
 .hero-links{
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
 }
 
 .first-link{
@@ -149,9 +147,9 @@
     background: #F6F6F6;
     background-image: url("../imgs/sound-img.png");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 40%;
-    padding: 50px;
+    background-position:center right;
+    padding: 125px 0;
+    background-size: auto 100%;
 }
 
 .second-heading{
@@ -168,6 +166,7 @@
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 48px;
     font-weight: 400;
+    line-height: 65px;
 }
 
 .second-heading p{
@@ -175,5 +174,6 @@
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 19px;
     font-weight: 400;
+    line-height: 32px;
 }
 /*End Sound Section*/
