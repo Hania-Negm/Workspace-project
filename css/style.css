@@ -141,3 +141,39 @@
 .hero-img{
     max-width: 100%;
 }
+/*End Hero Section*/
+
+
+/*Start Sound Section*/
+.sound-section {
+    background: #F6F6F6;
+    background-image: url("../imgs/sound-img.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40%;
+    padding: 50px;
+}
+
+.second-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 488px;
+}
+
+.second-heading h2{
+    color: #334756;
+    font-family: "Ramabhadra" , "sans-serif";
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.second-heading p{
+    color: #667580;
+    font-family: "Ramabhadra" , "sans-serif";
+    font-size: 19px;
+    font-weight: 400;
+}
+/*End Sound Section*/
