@@ -316,3 +316,103 @@ label{
     }
 }
 /*End Contact Section*/
+
+/*Start Customer Section*/
+.customer-say-section{
+    padding: 150px 15px;
+}
+
+.customer-say-section .container h2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #334756;
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65px;
+    margin-bottom: 24px;
+}
+
+.customer-item{
+    background: #334756;
+    padding: 30px;
+    position: relative;
+}
+
+.customer-item::before{
+    content: " ❝ ";
+    color: #667580;
+    font-size: 114px;
+    position: absolute;
+    top: -15px;
+    left: 24px;
+    opacity: 0.5;
+}
+
+.customer-item p {
+    padding-bottom: 20px;
+    color: #FFF;
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 1;
+    position: relative;
+}
+
+.info{
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+}
+
+.customer svg{
+    height: 100%;
+}
+
+.customer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.customer-info h3 , .customer-info h4{
+    color: #FFF;
+    font-family: "Ramabhadra", sans-serif;
+    font-weight: 400;
+}
+
+.customer-info h3{
+    font-size: 16px;
+}
+
+.customer-info h4{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px){
+    .customer-say-section .col-5{
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .customer-item{
+        text-align: center;
+    }
+
+    .customer-say-section .container h2{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .info{
+        flex-wrap: wrap;
+    }
+
+    .customer-info{
+        justify-content: center;
+        text-align: center;
+    }
+}
