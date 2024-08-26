@@ -180,14 +180,35 @@
 
 /*Start Form Section*/
 .contact-section{
-    padding: 125px 0;
+    padding: 125px 15px;
 }
 .contact-section .row{ 
     justify-content: center;
 }
 
-.contact-section .row .col-6{
-    padding: 0;
+/* .contact-section .col-6:first-child{
+    padding-right: 0;
+}
+
+.contact-section .col-6:last-child{
+    padding-left: 0;
+} */
+
+.select-icon select{
+    appearance: none;
+    width: 100%;
+}
+
+.select-icon{
+    position: relative;
+}
+
+.select-icon .icon{
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
 }
 
 .form-col{
@@ -276,4 +297,22 @@ label{
 .contact-section  .col-6 img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
+
+@media screen and (max-width: 800px){
+    .contact-section .col-6{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .contact-section .col-6:first-child{
+        padding-right: 0;
+    }
+    
+    .contact-section .col-6:last-child{
+        padding-left: 0;
+    }
+}
+/*End Contact Section*/
