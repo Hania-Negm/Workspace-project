@@ -6,6 +6,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --first-color: #D6D6D6;
+    --white: #fff;
+    --second-color:#FF4C29;
+    --third-color:#667580;
+    --fourth-color:#334756;
+    --fifth-color:#F6F6F6;
+}
+
 /*Start Header*/
 .main-header{
     background-color: #334756;
@@ -28,14 +38,14 @@
 
 .header-li a{
     text-decoration: none;
-    color: #D6D6D6;
+    color: var(--first-color);
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 17px;
     font-weight: 400;
 }
 
 .header-li a:hover{
-    color: #FFF;
+    color: var(--white);
 }
 
 .menu{
@@ -74,11 +84,11 @@
 }
 
 .color{
-    color: #FF4C29;
+    color: var(--second-color);
 }
 
 .hero-heading p{
-    color: #667580;
+    color: var(--third-color);
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 20px;
     font-weight: 400;
@@ -97,20 +107,20 @@
     min-width: 284px;
     padding: 16px 24px;
     text-align: center;
-    color: #FFF;
+    color: var(--white);
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 24px;
     font-weight: 400;
     border-radius: 4px;
-    border: 1px solid #FF4C29;
-    background-color: #FF4C29;
+    border: 1px solid var(--second-color);
+    background-color: var(--second-color);
 }
 
 .first-link:hover{
     transition: all linear 0.2s;
     transform: scale(1);
-    background-color: #FFF;
-    color: #FF4C29;
+    background-color: var(--white);
+    color: var(--second-color);
 }
 
 .second-link{
@@ -121,7 +131,7 @@
     min-width: 284px;
     padding: 16px 24px;
     text-align: center;
-    color: #334756;
+    color: var(--fourth-color);
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 24px;
     font-weight: 400;
@@ -132,8 +142,8 @@
 .second-link:hover{
     transition: all linear 0.2s;
     transform: scale(1);
-    background-color: #667580;
-    color: #FFF;
+    background-color: var(--third-color);
+    color: var(--white);
 }
 
 .hero-img{
@@ -144,7 +154,7 @@
 
 /*Start Sound Section*/
 .sound-section {
-    background: #F6F6F6;
+    background: var(--fifth-color);
     background-image: url("../imgs/sound-img.png");
     background-repeat: no-repeat;
     background-position:center right;
@@ -162,7 +172,7 @@
 }
 
 .second-heading h2{
-    color: #334756;
+    color: var(--fourth-color);
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 48px;
     font-weight: 400;
@@ -170,7 +180,7 @@
 }
 
 .second-heading p{
-    color: #667580;
+    color: var(--third-color);
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 19px;
     font-weight: 400;
@@ -216,12 +226,12 @@
     flex-direction: column;
     gap: 40px;
     padding: 16px 48px;
-    background: #334756;
+    background: var(--fourth-color);
     height: 100%;
 }
 
 .form-col h2{
-    color: #FFF;
+    color: var(--white);
     font-family: "Ramabhadra", sans-serif;
     font-size: 32px;
     font-weight: 400;
@@ -240,7 +250,7 @@
 }
 
 label{
-    color: #FFF;
+    color: var(--white);
     font-family: "Ramabhadra", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -252,7 +262,7 @@ label{
     border-radius: 2px;
     border: 0;
     flex-grow: 1;
-    color: #667580;
+    color: var(--third-color);
     font-family: "Ramabhadra", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -264,7 +274,7 @@ label{
     border-radius: 2px;
     border: 0;
     flex-grow: 1;
-    color: #667580;
+    color: var(--third-color);
     font-family: "Ramabhadra", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -275,14 +285,13 @@ label{
     height: 56px;
     padding: 16px 24px;
     border-radius: 2px;
-    border: 1px solid #FF4C29;
-    background: #FF4C29;
-    color: #667580;
+    border: 1px solid var(--second-color);
+    background: var(--second-color);
     font-family: "Ramabhadra", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 18px;
-    color: #FFF;
+    color: var(--white);
     flex-grow: 1;
     cursor: pointer;
 }
@@ -290,8 +299,8 @@ label{
 .form button:hover{
     transition: all linear 0.2s;
     transform: scale(1);
-    background-color: #FFF;
-    color: #FF4C29;
+    background-color: var(--white);
+    color: var(--second-color);
 }
 
 .contact-section  .col-6 img{
@@ -326,7 +335,7 @@ label{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: #334756;
+    color: var(--fourth-color);
     font-family: "Ramabhadra", sans-serif;
     font-size: 48px;
     font-weight: 400;
@@ -335,14 +344,14 @@ label{
 }
 
 .customer-item{
-    background: #334756;
+    background: var(--fourth-color);
     padding: 30px;
     position: relative;
 }
 
 .customer-item::before{
     content: " ❝ ";
-    color: #667580;
+    color: var(--third-color);
     font-size: 114px;
     position: absolute;
     top: -15px;
@@ -352,7 +361,7 @@ label{
 
 .customer-item p {
     padding-bottom: 20px;
-    color: #FFF;
+    color: var(--white);
     font-family: "Ramabhadra", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -377,7 +386,7 @@ label{
 }
 
 .customer-info h3 , .customer-info h4{
-    color: #FFF;
+    color: var(--white);
     font-family: "Ramabhadra", sans-serif;
     font-weight: 400;
 }
