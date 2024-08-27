@@ -171,7 +171,7 @@
     max-width: 488px;
 }
 
-.second-heading h2{
+.second-heading h2 , .second-heading-two h2{
     color: var(--fourth-color);
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 48px;
@@ -179,7 +179,7 @@
     line-height: 65px;
 }
 
-.second-heading p{
+.second-heading p , .second-heading-two p{
     color: var(--third-color);
     font-family: "Ramabhadra" , "sans-serif";
     font-size: 19px;
@@ -436,4 +436,29 @@ label{
         justify-content: center;
         text-align: center;
     }
+}
+/*End Customer Section*/
+
+/*Start Second Sound Section*/
+.sound-section-two{
+    background: var(--fifth-color);
+    background-image: url("../imgs/sound-2-img.png");
+    background-repeat: no-repeat;
+    background-position:center left;
+    padding: 125px 0;
+    background-size: auto 100%;
+}
+
+.sound-section-two .container{
+    display: flex;
+    justify-content: end;
+}
+
+.second-heading-two{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* justify-content: center;
+    align-items: flex-end; */
+    max-width: 488px;
 }
