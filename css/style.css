@@ -328,12 +328,10 @@ label{
 
 /*Start Customer Section*/
 .customer-say-section{
-    padding: 150px 15px;
+    padding: 50px 15px;
 }
 
 .customer-say-section .container h2{
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     color: var(--fourth-color);
     font-family: "Ramabhadra", sans-serif;
@@ -346,10 +344,16 @@ label{
 .customer-item{
     background: var(--fourth-color);
     padding: 30px;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url("../imgs/bk.png");
+    background-repeat: no-repeat;
+    background-position: 24px 24px;
 }
 
-.customer-item::before{
+/* .customer-item::before{
     content: " ❝ ";
     color: var(--third-color);
     font-size: 114px;
@@ -357,26 +361,33 @@ label{
     top: -15px;
     left: 24px;
     opacity: 0.5;
-}
+} */
 
 .customer-item p {
-    padding-bottom: 20px;
     color: var(--white);
     font-family: "Ramabhadra", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    z-index: 1;
-    position: relative;
+    /* z-index: 1;
+    position: relative; */
 }
 
 .info{
     display: flex;
     gap: 13px;
-    justify-content: center;
+    align-items: center;
 }
 
-.customer svg{
-    height: 100%;
+.customer{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.customer img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .customer-info{
@@ -418,6 +429,7 @@ label{
 
     .info{
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .customer-info{
