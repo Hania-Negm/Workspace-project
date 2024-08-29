@@ -470,23 +470,24 @@ label{
 
 /*Start Footer*/
 footer{
-    padding: 81px 0;
+    padding: 40px 0;
     background: #334756;
 }
 
-footer .row{
+footer .container{
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 64px;
 }
 
 .second-row{
     display: flex;
     gap: 64px;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 .first-item-footer{
-    justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -497,7 +498,6 @@ footer .row{
     list-style: none;
     display: flex;
     gap: 16px;
-    justify-content: center;
 }
 
 .first-item-footer p{
@@ -508,17 +508,14 @@ footer .row{
     line-height: 26px;
 }
 
-.second-item-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
 
 .second-item-footer h4{
     color: var(--white);
     font-family: "Ramabhadra", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 24px;
+    line-height: 30px;
 }
 
 .second-item-ul{
@@ -533,6 +530,7 @@ footer .row{
     text-decoration: none;
     font-family: "Ramabhadra", sans-serif;
     font-size: 16px;
+    line-height: 26px;
     font-weight: 400;
 }
 
