@@ -331,6 +331,10 @@ label{
     padding: 50px 15px;
 }
 
+.customer-say-section .row{
+    justify-content: center;
+}
+
 .customer-say-section .container h2{
     text-align: center;
     color: var(--fourth-color);
@@ -446,7 +450,7 @@ label{
     background-repeat: no-repeat;
     background-position:center left;
     padding: 125px 0;
-    background-size: auto 100%;
+    background-size: cover 40%;
 }
 
 .sound-section-two .container{
@@ -461,4 +465,90 @@ label{
     /* justify-content: center;
     align-items: flex-end; */
     max-width: 488px;
+}
+/*End Sound Sexction Two*/
+
+/*Start Footer*/
+footer{
+    padding: 81px 0;
+    background: #334756;
+}
+
+footer .row{
+    justify-content: space-between;
+}
+
+.second-row{
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.first-item-footer{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 255px;
+}
+
+.ul-footer{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.first-item-footer p{
+    color: var(--white);
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.second-item-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.second-item-footer h4{
+    color: var(--white);
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.second-item-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    list-style: none;
+}
+
+.second-item-li a{
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px){
+    .first-item-footer{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .second-row{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0;
+    }
 }
